@@ -199,10 +199,17 @@ export function TermsPage({ platform }: { platform: Platform | null }) {
         <button
           type="button"
           onClick={() => {
-            if (!userId.trim()) return toast("الرجاء إدخال الـ ID الخاص بك");
-            if (!selectedGame) return toast("الرجاء اختيار اللعبة المطلوبة");
+            if (!userId.trim()) {
+              toast("الرجاء إدخال الـ ID الخاص بك");
+              return;
+            }
+            if (!selectedGame) {
+              toast("الرجاء اختيار اللعبة المطلوبة");
+              return;
+            }
             toast("جارٍ التحقق من البيانات...");
           }}
+
           className="mb-12 mt-8 h-12 w-full rounded-xl bg-foreground text-lg font-extrabold text-background shadow-lg transition-opacity hover:opacity-90"
         >
           التحقق
