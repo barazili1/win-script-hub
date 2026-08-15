@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import {
   BadgeDollarSign,
+  Banknote,
   CheckCircle2,
   Copy,
   Download,
@@ -148,7 +149,7 @@ export function TermsPage({ platform }: { platform: Platform | null }) {
           <ConditionCard title="إيداع مبلغ بحد أدنى 300 جنيه أو 6 دولار">
             <div className="mt-3 grid grid-cols-2 gap-3">
               <div className="rounded-xl border border-border bg-black/50 p-3 text-center">
-                <span className="text-2xl">🇪🇬</span>
+                <Banknote className="mx-auto h-6 w-6 text-neon" />
                 <p className="mt-1 text-lg font-extrabold text-neon">300 EGP</p>
               </div>
               <div className="rounded-xl border border-border bg-black/50 p-3 text-center">
