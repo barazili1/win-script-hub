@@ -13,7 +13,7 @@ function makeWin(): Win {
     key: counter,
     id: `ID: ${Math.floor(100 + Math.random() * 899)}***${Math.floor(10 + Math.random() * 89)}`,
     amount: Math.floor(8 + Math.random() * 190) * 25,
-    platform: PLATFORM_NAMES[Math.floor(Math.random() * 2)],
+    platform: PLATFORM_NAMES[Math.floor(Math.random() * 2)] ?? "UltraPari",
     secs: Math.floor(3 + Math.random() * 40),
   };
 }
